@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+    android:background="@drawable/bg"
+    tools:context=".category">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/report"
+        android:layout_width="363dp"
+        android:layout_height="124dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="132dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/lblinfra"
+            android:layout_width="223dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="140dp"
+            android:paddingTop="20dp"
+            android:text="WASTE REPORT"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/wasteimga"
+            android:layout_width="143dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/wastesa" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reportinfras"
+        android:layout_width="363dp"
+        android:layout_height="124dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/report">
+
+        <ImageView
+            android:id="@+id/insfra"
+            android:layout_width="143dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/infrasa" />
+
+        <TextView
+            android:id="@+id/lblinfraa"
+            android:layout_width="222dp"
+            android:layout_height="123dp"
+            android:layout_marginStart="140dp"
+            android:paddingTop="20dp"
+            android:text="INFRASTRACTURE REPORT"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/reportincident"
+        android:layout_width="363dp"
+        android:layout_height="127dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/reportinfras">
+
+        <ImageView
+            android:id="@+id/majors"
+            android:layout_width="146dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:src="@drawable/notify" />
+
+        <TextView
+            android:id="@+id/majorsA"
+            android:layout_width="220dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="145dp"
+            android:paddingTop="20dp"
+            android:text="CRIME REPORT"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

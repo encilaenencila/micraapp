@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+
+    android:orientation="vertical"
+    tools:context=".Dashboard">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/helveticas"
+        android:gravity="center"
+        android:text="ANNOUNCEMENTS"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_slider_mainActivity"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+
+
+        app:cardCornerRadius="8dp">
+
+        <com.smarteist.autoimageslider.SliderView
+
+            android:id="@+id/imageSlider"
+            android:background="@drawable/backheader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:sliderAnimationDuration="600"
+            app:sliderAutoCycleDirection="back_and_forth"
+            app:sliderAutoCycleEnabled="true"
+            app:sliderIndicatorAnimationDuration="600"
+            app:sliderIndicatorGravity="center_horizontal|bottom"
+            app:sliderIndicatorMargin="15dp"
+            app:sliderIndicatorOrientation="horizontal"
+            app:sliderIndicatorPadding="3dp"
+            app:sliderIndicatorRadius="2dp"
+            app:sliderIndicatorSelectedColor="#5A5A5A"
+            app:sliderIndicatorUnselectedColor="#FFF"
+            app:sliderScrollTimeInSec="1"
+            app:sliderStartAutoCycle="true" />
+
+    </androidx.cardview.widget.CardView>
+
+    <!--  <EditText
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_gravity="left"
+        android:layout_marginLeft="30dp"
+        android:background="@null"
+        android:clickable="true"
+        android:cursorVisible="false"
+        android:drawableStart="@drawable/ic_baseline_fact_check_24"
+        android:ems="10"
+        android:focusable="false"
+        android:gravity="center"
+        android:hint="See Details"
+        android:onClick="ClickDetails"
+        android:scrollbars="vertical" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cv_slider_mainActivity"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewCall"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="4dp"
+            app:cardBackgroundColor="#0000"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imaddviecall"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_gravity="left|center"
+                android:paddingTop="5dp"
+                android:src="@drawable/emergency" />
+
+            <TextView
+                android:id="@+id/textcall"
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/helveticas"
+                android:padding="5dp"
+                android:text="EMERGENCY \nHOTLINE"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <!--  <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewProfile"
+            android:layout_width="359dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="3dp"
+            app:cardBackgroundColor="#0000"
+            app:cardUseCompatPadding="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.519"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView">
+
+            <ImageView
+                android:id="@+id/imageView7"
+
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:paddingTop="5dp"
+                android:src="@drawable/profsa" />
+
+            <TextView
+
+                android:id="@+id/textView3"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/helveticas"
+                android:padding="5dp"
+                android:text="PROFILE"
+                android:textAlignment="viewStart"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>-->
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardViewAnnouncement"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#0000"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/announce"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center|left"
+                android:paddingTop="5dp"
+                android:src="@drawable/announcement" />
+
+            <TextView
+                android:id="@+id/textannonce"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/helveticas"
+                android:padding="5dp"
+                android:text="ANNOUNCEMENT"
+
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+
+            android:id="@+id/cardViewReport"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            app:cardBackgroundColor="#0000"
+            app:cardUseCompatPadding="true">
+
+            <ImageView
+                android:id="@+id/imaddviewreports"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center|left"
+                android:paddingTop="5dp"
+                android:src="@drawable/newdocu" />
+
+            <TextView
+                android:id="@+id/textaddreport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/helveticas"
+                android:padding="5dp"
+                android:text="ADD REPORT"
+
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold"
+
+                />
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardViewRecordReport"
+        android:layout_width="300dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:cardBackgroundColor="#0000"
+        app:cardUseCompatPadding="true"
+         >
+            <ImageView
+                android:id="@+id/imviewreports"
+                android:layout_width="73dp"
+                android:layout_height="43dp"
+                android:layout_gravity="center|left"
+                android:paddingTop="5dp"
+                android:src="@drawable/docszxz" />
+
+            <TextView
+                android:id="@+id/textviewreportS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|left"
+                android:layout_marginLeft="80dp"
+                android:layout_marginTop="3dp"
+                android:fontFamily="@font/helveticas"
+                android:padding="5dp"
+                android:text="VIEW REPORT"
+                android:textColor="#000000"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

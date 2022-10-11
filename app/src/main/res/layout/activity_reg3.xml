@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/micrabg"
+
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".Reg3">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="#00FFFFFF"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center_horizontal"
+            android:background="@drawable/back"
+            android:textStyle="bold"
+            />
+
+
+        <TextView
+            android:id="@+id/tvidentification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableEnd="@drawable/ic_baseline_info_24"
+            android:text="ADDRESS"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Guide: You can click 'GET LOCATION' to get your adress automatically."/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="You can also manually type you address."/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/tladdressline"
+            app:startIconDrawable="@drawable/ic_baseline_location_on_24"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:gravity="center_horizontal"
+            android:hint="Complete Address"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:scrollbarSize="1dp"
+                android:scrollbars="horizontal"
+                android:id="@+id/teaddressline"
+                android:gravity="center_horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+
+                android:inputType="textMultiLine"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btngetcurrentloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/purple_500"
+        android:shadowColor="@color/black"
+        android:text="Get Location"
+        android:textStyle="bold" />
+
+
+    <Button
+        android:id="@+id/btnproceed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+
+        android:backgroundTint="@color/purple_500"
+        android:shadowColor="@color/black"
+        android:text="Proceed"
+        android:textStyle="bold" />
+
+
+
+
+
+
+
+
+</LinearLayout>

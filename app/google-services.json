@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "906666932065",
+    "project_id": "micrapushnotification",
+    "storage_bucket": "micrapushnotification.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906666932065:android:9a254668b6895bfb013720",
+        "android_client_info": {
+          "package_name": "com.example.micraapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906666932065-b8ovf2eh6cacb9n613jlvkngsdk0e46r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZ0Ykx3nHTJpRGjePUz44Du3uhtDyny0o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906666932065-b8ovf2eh6cacb9n613jlvkngsdk0e46r.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

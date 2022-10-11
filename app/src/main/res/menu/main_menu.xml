@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+
+
+        android:checkableBehavior="single">
+        <item android:id="@+id/nav_dashboard"
+            android:title="Dashboard"
+            android:icon="@drawable/ic_baseline_article_24"
+            />
+        <item android:id="@+id/nav_emergency"
+            android:title="Emergency Hotline"
+            android:icon="@drawable/ic_baseline_call_24"
+            />
+        <item android:id="@+id/nav_report"
+            android:title="Report"
+            android:icon="@drawable/ic_baseline_note_add_24"
+            />
+      <!--  <item android:id="@+id/nav_viewreport"
+            android:title="View report"
+            android:icon="@drawable/ic_baseline_summarize_24"
+            />-->
+        <item
+            android:id="@+id/announcer"
+            android:icon="@drawable/ic_baseline_announcement_24"
+            android:title="Announcements" />
+
+       <!-- <item android:id="@+id/crimereport"
+            android:title="Crime Tally"
+            android:icon="@drawable/ic_baseline_analytics_24"
+            />-->
+       <!-- <item android:id="@+id/nav_logout"
+            android:title="Log out"
+            android:icon="@drawable/ic_baseline_logout_24"
+
+            />-->
+    </group>
+</menu>
